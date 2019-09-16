@@ -1,0 +1,25 @@
+﻿  variableArguments.cpp
+  swap.cpp
+  sum.cpp
+  swapBits.cpp
+e:\college\mrnd\c-unit0\src\swapbits.cpp(79): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+e:\college\mrnd\c-unit0\src\swapbits.cpp(56): warning C4101: 'j': unreferenced local variable
+  octalToHexadecimal.cpp
+e:\college\mrnd\c-unit0\src\octaltohexadecimal.cpp(26): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  nthNumber.cpp
+e:\college\mrnd\c-unit0\src\nthnumber.cpp(55): warning C4101: 'prime': unreferenced local variable
+  MainBasics.cpp
+  isPerfect.cpp
+  isOlder.cpp
+  decimalToOctal.cpp
+e:\college\mrnd\c-unit0\src\decimaltooctal.cpp(35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+e:\college\mrnd\c-unit0\src\decimaltooctal.cpp(35): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  countOnes.cpp
+e:\college\mrnd\c-unit0\src\countones.cpp(37): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type '__int64'
+  e:\college\mrnd\c-unit0\src\countones.cpp(37): note: consider using '%lld' in the format string
+  e:\college\mrnd\c-unit0\src\countones.cpp(37): note: consider using '%I64d' in the format string
+  countFactorials.cpp
+  count.cpp
+  Generating Code...
+  src.vcxproj -> E:\college\MRND\C-Unit0\Debug\src.exe
+  src.vcxproj -> E:\college\MRND\C-Unit0\Debug\src.pdb (Full PDB)
