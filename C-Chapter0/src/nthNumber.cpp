@@ -37,8 +37,8 @@ int nthFibonacci(int n)
 }
 int isprime(int n)
 {
-	int count = 0;
-	for (int i = 1; i <= n; i++)
+	int count = 2;
+	for (int i = 2; i <= n/2; ++i)
 	{
 		if (n%i == 0)
 			count++;
@@ -52,7 +52,6 @@ int nthPrime(int num)
 {
 	if (num <= 0)
 		return -1;
-	int prime;
 	int num1 = 2;
 	while (num)
 	{
