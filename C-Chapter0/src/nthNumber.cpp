@@ -52,13 +52,17 @@ int nthPrime(int num)
 {
 	if (num <= 0)
 		return -1;
-	int num1 = 2;
+	if(num == 1)
+		return 2;
+	if(num == 2)
+		return 3;
+	int num1 = 5;
 	while (num)
 	{
 		if (isprime(num1))
 			num--;
 
-		num1++;
+		num1+2;
 	}
 	return --num1;
 }
