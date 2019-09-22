@@ -1,0 +1,110 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly spec, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class spec.E01_FunctionsSpec: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext 'get set' : 
+  Methods:
+    get_TestContext(): PrivateScope, Public, HideBySig, SpecialName
+    set_TestContext(TestContext): PrivateScope, Public, HideBySig, SpecialName
+    Test_midPoint(): PrivateScope, Public, HideBySig
+    Test_sumOfMSDsBasic(): PrivateScope, Public, HideBySig
+    Test_sumOf100DigitNumbers1(): PrivateScope, Public, HideBySig
+    Test_sumOf100DigitNumbers2(): PrivateScope, Public, HideBySig
+    Test_sumOf100DigitNumbers3(): PrivateScope, Public, HideBySig
+    Test_sumOf100DigitNumbers4(): PrivateScope, Public, HideBySig
+    Test_sumOf100DigitNumbers5(): PrivateScope, Public, HideBySig
+    Test_productOf100DigitNumbers1(): PrivateScope, Public, HideBySig
+    Test_productOf100DigitNumbers2(): PrivateScope, Public, HideBySig
+    Test_productOf100DigitNumbers3(): PrivateScope, Public, HideBySig
+    Test_productOf100DigitNumbers4(): PrivateScope, Public, HideBySig
+Class spec.E02_BitwiseSpec: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext 'get set' : 
+  Methods:
+    get_TestContext(): PrivateScope, Public, HideBySig, SpecialName
+    set_TestContext(TestContext): PrivateScope, Public, HideBySig, SpecialName
+    Test_andOfEachByte1(): PrivateScope, Public, HideBySig
+    Test_andOfEachByte2(): PrivateScope, Public, HideBySig
+    Test_andOfEachByte3(): PrivateScope, Public, HideBySig
+    Test_andOfEachByte4(): PrivateScope, Public, HideBySig
+    Test_numberFromBits1(): PrivateScope, Public, HideBySig
+    Test_numberFromBits2(): PrivateScope, Public, HideBySig
+    Test_numberFromBits3(): PrivateScope, Public, HideBySig
+    Test_numberFromBits4(): PrivateScope, Public, HideBySig
+    Test_numberFromBits5(): PrivateScope, Public, HideBySig
+    Test_numberFromBits6(): PrivateScope, Public, HideBySig
+    Test_bitsFromNumber1(): PrivateScope, Public, HideBySig
+    Test_bitsFromNumber2(): PrivateScope, Public, HideBySig
+    Test_bitsFromNumber3(): PrivateScope, Public, HideBySig
+    Test_bitsFromNumber4(): PrivateScope, Public, HideBySig
+    Test_bitsFromNumber5(): PrivateScope, Public, HideBySig
+    Test_bitsFromNumber6(): PrivateScope, Public, HideBySig
+    Test_bitsFromNumber7(): PrivateScope, Public, HideBySig
+    Test_numberOfOnesInBinary1(): PrivateScope, Public, HideBySig
+    Test_numberOfOnesInBinary2(): PrivateScope, Public, HideBySig
+    Test_numberOfOnesInBinary3(): PrivateScope, Public, HideBySig
+    Test_numberOfOnesInBinary4(): PrivateScope, Public, HideBySig
+    Test_numberOfOnesInBinary5(): PrivateScope, Public, HideBySig
+    Test_numberOfOnesInBinary6(): PrivateScope, Public, HideBySig
+    Test_numberOfOnesInBinary7(): PrivateScope, Public, HideBySig
+    Test_numberOfOnesInBinary8(): PrivateScope, Public, HideBySig
+    Test_isPalindromeInBase256Basic1(): PrivateScope, Public, HideBySig
+    Test_isPalindromeInBase256Basic2(): PrivateScope, Public, HideBySig
+    Test_isPalindromeInBase256Medium1(): PrivateScope, Public, HideBySig
+    Test_isPalindromeInBase256Medium2(): PrivateScope, Public, HideBySig
+    Test_isPalindromeInBase256Medium3(): PrivateScope, Public, HideBySig
+    Test_isPalindromeInBase256Medium4(): PrivateScope, Public, HideBySig
+    Test_isPalindromeInBase256Medium5(): PrivateScope, Public, HideBySig
+    Test_isPalindromeInBase256Medium6(): PrivateScope, Public, HideBySig
+Class spec.L01_FunctionsSpec: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext 'get set' : 
+  Methods:
+    get_TestContext(): PrivateScope, Public, HideBySig, SpecialName
+    set_TestContext(TestContext): PrivateScope, Public, HideBySig, SpecialName
+    Test_numberOfPeople(): PrivateScope, Public, HideBySig
+    Test_centimetersPerInch(): PrivateScope, Public, HideBySig
+    Test_tenTimes(): PrivateScope, Public, HideBySig
+    Test_tenTimesVector3(): PrivateScope, Public, HideBySig
+    Test_swap(): PrivateScope, Public, HideBySig
+    Test_primeFactorsVector0(): PrivateScope, Public, HideBySig
+    Test_primeFactorsVector2(): PrivateScope, Public, HideBySig
+    Test_primeFactorsVector3(): PrivateScope, Public, HideBySig
+    Test_numberToStringZero(): PrivateScope, Public, HideBySig
+    Test_numberToStringPositive(): PrivateScope, Public, HideBySig
+    Test_numberToStringNegative(): PrivateScope, Public, HideBySig
+    Test_nTimesMysteryVectorN(): PrivateScope, Public, HideBySig
+    Test_sigmaNWithMystery(): PrivateScope, Public, HideBySig
+    Test_tenTimesMysteryVectorN(): PrivateScope, Public, HideBySig
+Class spec.L02_BitwiseSpec: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext 'get set' : 
+  Methods:
+    get_TestContext(): PrivateScope, Public, HideBySig, SpecialName
+    set_TestContext(TestContext): PrivateScope, Public, HideBySig, SpecialName
+    Test_xorCommutativity(): PrivateScope, Public, HideBySig
+    Test_xorAA(): PrivateScope, Public, HideBySig
+    Test_xorAZero(): PrivateScope, Public, HideBySig
+    Test_xorAssociativity(): PrivateScope, Public, HideBySig
+    Test_xorNumbers(): PrivateScope, Public, HideBySig
+    Test_turnOnNthBit(): PrivateScope, Public, HideBySig
+    Test_twoPowerN(): PrivateScope, Public, HideBySig
+    Test_isOdd(): PrivateScope, Public, HideBySig
+    Test_isEven(): PrivateScope, Public, HideBySig
+    Test_SignificantBytes(): PrivateScope, Public, HideBySig
+    Test_reverseOfNumberByByte(): PrivateScope, Public, HideBySig

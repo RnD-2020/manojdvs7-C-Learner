@@ -1,0 +1,11 @@
+﻿  Main.cpp
+  L02_Bitwise.cpp
+  L01_Functions.cpp
+  E02_Bitwise.cpp
+c:\users\dvsma\downloads\manojdvs7-c-learner-chapter1-submission\manojdvs7-c-learner-chapter1-submission\c-unit1\src\e02_bitwise.cpp(43): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+c:\users\dvsma\downloads\manojdvs7-c-learner-chapter1-submission\manojdvs7-c-learner-chapter1-submission\c-unit1\src\e02_bitwise.cpp(95): warning C4101: 'rev': unreferenced local variable
+  E01_Functions.cpp
+c:\users\dvsma\downloads\manojdvs7-c-learner-chapter1-submission\manojdvs7-c-learner-chapter1-submission\c-unit1\src\e01_functions.cpp(31): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  src.vcxproj -> C:\Users\dvsma\Downloads\manojdvs7-C-Learner-Chapter1-submission\manojdvs7-C-Learner-Chapter1-submission\C-Unit1\Debug\src.exe
+  src.vcxproj -> C:\Users\dvsma\Downloads\manojdvs7-C-Learner-Chapter1-submission\manojdvs7-C-Learner-Chapter1-submission\C-Unit1\Debug\src.pdb (Full PDB)

@@ -1,0 +1,14 @@
+﻿  stdafx.cpp
+  AssemblyInfo.cpp
+  E01_FunctionsSpec.cpp
+c:\users\dvsma\downloads\manojdvs7-c-learner-chapter1-submission\manojdvs7-c-learner-chapter1-submission\c-unit1\spec\../src/E01_Functions.cpp(31): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  E02_BitwiseSpec.cpp
+c:\users\dvsma\downloads\manojdvs7-c-learner-chapter1-submission\manojdvs7-c-learner-chapter1-submission\c-unit1\spec\../src/E02_Bitwise.cpp(43): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+c:\users\dvsma\downloads\manojdvs7-c-learner-chapter1-submission\manojdvs7-c-learner-chapter1-submission\c-unit1\spec\../src/E02_Bitwise.cpp(95): warning C4101: 'rev': unreferenced local variable
+  L01_FunctionsSpec.cpp
+  L02_BitwiseSpec.cpp
+  TestHelperMethods.cpp
+  Generating Code...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+  spec.vcxproj -> C:\Users\dvsma\Downloads\manojdvs7-C-Learner-Chapter1-submission\manojdvs7-C-Learner-Chapter1-submission\C-Unit1\Debug\spec.dll
+  spec.vcxproj -> C:\Users\dvsma\Downloads\manojdvs7-C-Learner-Chapter1-submission\manojdvs7-C-Learner-Chapter1-submission\C-Unit1\Debug\spec.pdb (Full PDB)
