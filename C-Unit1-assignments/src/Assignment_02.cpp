@@ -7,33 +7,39 @@
 // factorialDigits[158] - digits of n!
 //
 
+int carryHandle(int factorialDigits[], int carry, int acount)
+{
+	while (carry)
+	{
+		factorialDigits[acount++] = carry % 10;
+		carry = carry / 10;
+	}
+	return acount;
+}
+int multiply(int factorialDigits[], int acount, int i)
+{
+	int count,j = 0;
+	int carry = 0;
+
+	for (count = 0; count < acount; count++)
+	{
+		int prod = factorialDigits[count] * i + carry;
+		factorialDigits[count] = prod % 10;
+		if (prod >= 10)
+			carry = prod / 10;
+		else
+			carry = 0;
+	}
+	return carryHandle(factorialDigits, carry, acount);
+}
 int factorialOfN(int n, int factorialDigits[158]) {
 	factorialDigits[0] = 1;
 	int acount = 1, count;
 	int j = 0, i, carry, temp;
 	for (i = 2; i <= n; i++)
-	{
-		j = 0;
-		carry = 0;
-		for (count = 0; count < acount; count++)
-		{
-			int prod = factorialDigits[count] * i + carry;
-			factorialDigits[count] = prod % 10;
-			if (prod >= 10)
-				carry = prod / 10;
-			else
-				carry = 0;
-		}
-		while (carry)
-		{
-			factorialDigits[acount++] = carry % 10;
-			carry = carry / 10;
-		}
-
-	}
+		acount = multiply(factorialDigits, acount, i);
 	return acount;
 }
-
 
 //
 // recamán’s sequence: "subtract if you can, otherwise add"
