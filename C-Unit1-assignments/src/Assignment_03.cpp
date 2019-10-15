@@ -6,21 +6,23 @@
 // {11, 8, 11}, 3  => 8
 //
 #include<stdlib.h>
-int numberWithoutRepeatition(int numbers[], int size) {
-	int max = numbers[0], min=numbers[0];
+void findMinMax(int *min, int *max, int numbers[], int size)
+{
 	int i;
 	for (i = 1; i < size; i++)
 	{
-		if (numbers[i] > max)
-			max = numbers[i];
-		if (numbers[i] < min)
-			min = numbers[i];
+		if (numbers[i] > *max)
+			*max = numbers[i];
+		if (numbers[i] < *min)
+			*min = numbers[i];
 	}
-	if (min < 0)
-		min = min*(-1);
-	int *countP = (int *)calloc(max+1, sizeof(int));
-	int *countN = (int *)calloc(min + 1, sizeof(int));
+	if (*min < 0)
+		*min = (*min)*(-1);
+}
 
+void findCount(int *countP, int *countN, int numbers[], int size)
+{
+	int i;
 	for (i = 0; i < size; i++)
 	{
 		if (numbers[i] >= 0)
@@ -28,8 +30,12 @@ int numberWithoutRepeatition(int numbers[], int size) {
 		else
 			countN[-1 * numbers[i]]++;
 	}
+}
 
-	for (i = 0; i < max+1; i++)
+int findNumberWithoutRepeatition(int *countP, int *countN, int numbers[], int max, int min)
+{
+	int i;
+	for (i = 0; i < max + 1; i++)
 	{
 		if (countP[i] == 1)
 			return i;
@@ -37,12 +43,23 @@ int numberWithoutRepeatition(int numbers[], int size) {
 	for (i = 0; i < min + 1; i++)
 	{
 		if (countN[i] == 1)
-			return -1*i;
+			return -1 * i;
 	}
-    
-	return 0;
 }
 
+int numberWithoutRepeatition(int numbers[], int size) {
+	int max = numbers[0], min=numbers[0];
+	int i;
+
+	findMinMax(&min, &max, numbers, size);
+
+	int *countP = (int *)calloc(max+1, sizeof(int));
+	int *countN = (int *)calloc(min + 1, sizeof(int));
+
+	findCount(countP, countN, numbers, size);
+    
+	return findNumberWithoutRepeatition(countP,countN,numbers,max,min);
+}
 //
 // encode an array of numbers by doing
 // XOR with n'th prime number
