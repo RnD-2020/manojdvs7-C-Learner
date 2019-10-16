@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>
+            My Understanding in Git
+        </title>
+    </head>
+
+    <body>
+        <h>
+            <b> 
+                <big> 
+                    Git 
+                </big> 
+            </b>
+        </h>
+        <p align="justify">
+            Git is a distributed version-control system for tracking changes in source code during software development.<br/> 
+        </p>
+
+        <h>
+            <b> 
+                <big>
+                    First Time Git Setup
+                </big> 
+            </b>
+        </h>
+        <p align="justify">
+            When you install <b>Git</b> in your system, there are things to customize in Git when you run <b>for first time.</b><br/> 
+        </p>
+        <p>
+            <b>1.Identity</b><br/>
+            The first thing you should do when you install Git is to set your user name and e-mail address.This canbe done using the following commands.<br/>
+            <b>
+                $ git config --global user.name "YourUserName"<br/>
+                $ git config --global user.email YourEmailaddress<br/>
+            </b>
+
+        </p>
+        <p>
+            <b>2.Setting Editor</b><br/>
+            This will set your default text editor.This can be done by using the following commad:<br/>
+            <b>
+                $ git config --global core.editor editorname
+            </b>
+        </p>
+        <p>
+            <b>3.Checking the Git Settings</b><br/>
+            This will help you to view all the Settings of Git in your system.You can verify them and make changes if any.This can be done using this commad:<br/>
+            <b>
+                git config --list
+            </b>
+        </p>
+        <h>
+            <b>
+                <big>
+                   Git Basics
+                </big>
+            </b>
+        </h>
+        <p align="justify">
+               This will cover all the basic commands and functionalities in Git<br/>
+        </p>
+        <p>
+            <b>1.Initializing the Git Repository</b><br/>
+            This creates a new subdirectory named .git that contains all of your necessary repository files basically Git repository skeleton.</b>This can be done using the following commad:<br/>
+            <b>
+               $ git init<br/>
+            </b>
+            This commad to be exectuted in your project directory.
+        </p>
+        <p>
+            <b>2.Cloning Repository</b><br/>
+            If you want to get a copy of an <b>existing</b> Git repository — for example, a project you’d like to contribute.</b>This can be done using the following commad:<br/>
+            <b>
+                $ git clone url.git<br/>
+            </b>
+        </p>
+        <p>
+            <b>3.Adding remote Repository</b><br/>
+            This will help you to add remote repository.This can be done using the following commad:<br/>
+            <b>
+                $ git remote add origin url.git<br/>
+            </b>
+        </p>
+        <p>
+            <b>4.Tracking New Files</b><br/>
+            Add files to be tracked. The changes made in the added files are tracked. This can be done using the following commad:<br/>
+            <b>
+                $ git add filename<br/>
+            </b>
+        </p>
+        <p>
+            <b>5.Removing the file</b><br/>
+            You can also remove a file from tracking. This can be done using the following commad:<br/>
+            <b>
+                $ git rm filename<br/>
+            </b>
+        </p>
+        <p>
+            <b>6.Commiting the changes</b><br/>
+            You can save your changes made in added files step by step using commits. This can be done using the following commad:<br/>
+            <b>
+                $ git commit -m "name of commit"<br/>
+            </b>
+            You can view your commit history using the following commad:<br/>
+            <b>
+                $ git log<br/>
+            </b>
+            You can also retrive the changes by switching from one commit to another commit.<br/>
+        </p>
+        <p>
+            <b>7.Pushing to remote repository</b><br/>
+            This will push the added files to remote repository,by default to master branch. This can be done using the following commad:<br/>
+            <b>
+                $ git push -u origin master<br/>
+            </b>
+            All the changes are to be pushed to remote repository.
+        </p>
+    </body>
+</html>
