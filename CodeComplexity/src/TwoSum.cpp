@@ -26,13 +26,13 @@ You need to solve this question in 3 ways.And measure time for each way.
 
 Observations: (Write down what you observed here):
 
-Way 1 :
+Way 1 :The brute force method is the naive method which takes O(n*n) time.
 
-Way 2 :
+Way 2 :This needs a sorted array to find the two numbers which sum up to a target.This also reduces computations as the array is sorted. 
 
-Way 3:
+Way 3:Even though this method uses an extra array,this method is really efficient.We use hashing in this method.The number of computations are even more less because we use hash array to search for a number and we check till the target index in hash table.
 
-Conclusion :
+Conclusion :It is really efficient to use hashing for searching an element in an array.
 */
 #include <stdio.h>
 #include <stdlib.h>
