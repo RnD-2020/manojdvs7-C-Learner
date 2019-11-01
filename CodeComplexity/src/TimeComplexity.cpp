@@ -29,7 +29,10 @@ char* function0(int n) {
 
 	}
 
-	return "O(n)";
+	return "O(n)"; 
+	/*
+	for() loop runs from 0 to n i.e n times
+	*/
 }
 
 char* function1(int n) {
@@ -37,6 +40,9 @@ char* function1(int n) {
 	for (i = 0, j = n; i < j; i *= 2, j /= 2);
 
 	return "O(logn)";
+	/*
+	As i is doubled, j is divided by 2 and this loop runs till i<j hence O(logn)
+	*/
 }
 
 char* function2(int n) {
@@ -49,6 +55,9 @@ char* function2(int n) {
 	}
 
 	return "O(n)";
+	/*
+	loop 1 runs for n times and loop 2 runs for 6*n times which is O(n)
+	*/
 }
 
 char* function3(int n) {
@@ -60,6 +69,12 @@ char* function3(int n) {
 	}
 
 	return "O(n*logn)";
+	/*
+	The outer loop runs for n times and inner loop runs based on the i value i.e 
+	when i=1,inner loop runs for n times,
+	when i=2, inner loop runs for n/2 times and so on.So the complexicity becomes O(logn)
+	hence total complexicity becomes O(n*logn)
+	*/
 }
 
 //Consider n as number of digits in "number" 
@@ -75,6 +90,9 @@ int digit_count(int number) {
 char* function4(int number) {
 	digit_count(number);
 	return "O(n)";
+	/*
+	The function digit_count() runs for O(n)
+	*/
 }
 
 void swap(int *n1, int *n2) {
@@ -96,6 +114,9 @@ void randomSort(int *arr, int n) {
 char* function5(int *arr, int size) {
 	randomSort(arr, size);
 	return "O(n*n)";
+	/*
+	In randomSort() function the inner loop depends on i, so it has to be expanded. When we expand it and compute we get O(n*n)
+	*/
 }
 
 int factorial(int n) {
@@ -109,6 +130,9 @@ int factorial(int n) {
 char* function6(int n) {
 	factorial(n);
 	return "O(n)";
+	/*
+	The factorial() function runs from 2 to n which is O(n)
+	*/
 }
 
 //Consider n as number of digits in number
@@ -125,6 +149,9 @@ int reverse(int number) {
 char* function7(int number) {
 	reverse(number);
 	return "O(n)";
+	/*
+	The reverse() runs till number!=0 which is O(n)
+	*/
 }
 
 char* function8(int n) {
@@ -138,6 +165,12 @@ char* function8(int n) {
 		}
 	}
 	return "O(n*logn)";
+	/*
+	The inner most loop(k) runs for constant time.
+	The inner loop(j) doubles j which runs for O(logn).
+	The outer loop(i) runs for O(n).
+	As no loop is dependent on any of its outer loops total complexicity becomes O(n*logn)
+	*/
 }
 
 char* function9(int n) {
@@ -148,6 +181,10 @@ char* function9(int n) {
 		}
 	}
 	return "O(n*n*logn)";
+	/*
+	The outer loop runs for O(logn) and inner loop runs for O(n*n)
+	As inner loop is not dependent on outer loop, total complexicity becomes O(n*n*logn)
+	*/
 }
 
 int power(int base, int exp) {
@@ -166,6 +203,9 @@ char* function10(int n) {
 		}
 	}
 	return "O(n^n)";
+	/*
+	Expanding the loops we get O(n^n)
+	*/
 }
 
 void remove_dup(int *arr, int size){
@@ -187,6 +227,9 @@ void remove_dup(int *arr, int size){
 char* function11(int *array, int size) {
 	remove_dup(array, size);
 	return "O(n*n)";
+	/*
+	Both the loop runs for n times hence O(n*n).
+	*/
 }
 
 int find_min_sum(int *array, int size) {
@@ -205,6 +248,9 @@ int find_min_sum(int *array, int size) {
 char* function12(int *array, int size) {
 	find_min_sum(array, size);
 	return "O(n*n)";
+	/*
+	Both the loop runs for O(n) hence O(n*n).
+	*/
 }
 
 //calculates standard deviation
@@ -223,6 +269,11 @@ float calculate_sd(float *array, int size) {
 char* function13(float* array, int size) {
 	calculate_sd(array, size);
 	return "O(n)";
+	/*
+	loop1:O(n)
+	loop2:O(n)
+	total complexity:O(n)
+	*/
 }
 
 int negative_sum(int *array, int size) {
@@ -237,6 +288,9 @@ int negative_sum(int *array, int size) {
 char* function14(int *array, int size) {
 	negative_sum(array, size);
 	return "O(n)";
+	/*
+	The function has complexity O(n).
+	*/
 }
 
 
