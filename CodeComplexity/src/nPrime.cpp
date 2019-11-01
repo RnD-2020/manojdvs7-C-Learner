@@ -18,7 +18,7 @@ Way 2 :We avoided checking for even numbers <N as we know we know all prime numb
 
 Way 3:We are checking if a number is divisible by primes less than that number.If it is divisible by any of the primes,it is not a prime number.
 
-Conclusion :
+Conclusion :Decreasing number of computations, conditional statements etc makes the code more efficient therefore reduces the time complexity. 
 */
 
 #include <stdio.h>
