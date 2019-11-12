@@ -15,19 +15,20 @@ NOTES:
 Problem Code :SC
 */
 
+
 #include <stdio.h>
 
 void * studentsCount(int *Arr, int len, int score, int *lessCount, int *moreCount) {
 	if(Arr==NULL || len<=0)
 		return NULL;
-	*lessCount = 0;
-	*moreCount = 0;
-	for (int i = 0; i < len; i++)
-	{
-		if (Arr[i] > score)
-			*(moreCount) = *(moreCount)+1;
-
-		else if (Arr[i] < score)
-			*(lessCount) = *(lessCount)+1;
-	}
+	int lc = 0;
+	int rc = len;
+	int count = 0;
+	while (Arr[lc] < score && lc < len)
+		lc++;
+	*lessCount = lc;
+	while (Arr[--rc] > score && rc >= 0)
+		count++;
+	
+	*moreCount = count;
 }
