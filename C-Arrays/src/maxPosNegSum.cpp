@@ -12,38 +12,25 @@ ERROR CASES: Return 0 for the invalid inputs
 
 NOTES:
 */
-
 #include <stdio.h>
-
+#include<stdlib.h>
 int maxPosNegSum(int* input,int length)
 {
 	if(input==NULL || length<0)
 		return 0;
-	int maxn=input[0], maxp=input[0];
-	if (maxn > 0)
-	{
-		for (int i = 0; i < length; i++)
-		{
-			if (input[i] < 0)
-			{
-				maxn = input[i];
-				break;
-			}
 
-		}
-	}
-	for (int i = 1; i < length; i++)
+	int maxn=INT_MIN, maxp=input[0];
+
+	for (int i = 0; i < length; i++)
 	{
 		if (input[i] > maxp)
 			maxp = input[i];
-		if (input[i] < 0)
-		{
-			if (input[i] > maxn)
-				maxn = input[i];
-		}
+
+		else if (input[i] < 0 && input[i] > maxn)
+			maxn = input[i];
 
 	}
-	if (maxn > 0 || maxp < 0)
+	if (maxn == INT_MIN || maxp < 0)
 		return 0;
 	return maxn + maxp;
 }
