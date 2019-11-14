@@ -14,28 +14,33 @@ NOTES: Don't create new array, try to change the input array.
 */
 
 #include <stdio.h>
+#include <stdlib.h>
+
+int findMaxLen(int *Arr,int len)
+{
+	int max = Arr[0];
+	for (int i = 1; i < len; i++)
+	{
+		if (max < Arr[i])
+			max = Arr[i];
+	}
+	return max;
+}
 
 int removeArrayDuplicates(int *Arr, int len)
 {
 	if (Arr == NULL || len <= 0)
 		return -1;
-
-	int i, j, k;
-	for (i = 0; i < len; i++) 
+	int max = findMaxLen(Arr, len);
+	int pos = 0;
+	int *hashTable = (int *)calloc(max+1, sizeof(int));
+	for (int i = 0; i < len; i++)
 	{
-		for (j = i + 1; j < len;) 
+		if (hashTable[Arr[i]] == 0)
 		{
-			if (Arr[j] == Arr[i]) 
-			{
-				for (k = j; k < len; k++) 
-				{
-					Arr[k] = Arr[k + 1];
-				}
-				len--;
-			}
-			else
-				j++;
+			Arr[pos++] = Arr[i];
+			hashTable[Arr[i]] = 1;
 		}
 	}
-	return len;
+	return pos;
 }
