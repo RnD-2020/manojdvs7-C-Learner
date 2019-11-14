@@ -22,12 +22,14 @@ int findLen(char *str)
 	}
 	return len;
 }
+
 char KthIndexFromEnd(char *str, int K) {
+	int len;
+	if (str != NULL)
+		len = findLen(str);
 
-	if (str == NULL || str == ""|| K<0)
+	if (str == NULL || str == "" || K < 0 || K > len)
 		return '\0';
-
-	int len = findLen(str);
 
 	return str[len - K];
 }
