@@ -1,0 +1,4 @@
+﻿  numberToLinkedList.cpp
+  SLL012Sort.cpp
+  Generating Code...
+e:\college\rnd\c-linkedlists\src\numbertolinkedlist.cpp(67): error C4703: potentially uninitialized local pointer variable 'temp' used
