@@ -54,3 +54,16 @@ int cannotHaveMoves(int size,int board[][size])
     }
     return 1;
 }
+int atLeastOneZero(int size,int board[][size])
+{
+    int row,col;
+    for(row=0;row<size;row++)
+    {
+        for(col=0;col<size;col++)
+        {
+            if(board[row][col]==0)
+                return 1;
+        }
+    }
+    return 0;
+}

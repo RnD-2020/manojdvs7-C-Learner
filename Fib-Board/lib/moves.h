@@ -4,19 +4,6 @@
 #include<time.h> 
 #include "shift.h"
 #include "conditions.h"
-int atLeastOneZero(int size,int board[][size])
-{
-    int row,col;
-    for(row=0;row<size;row++)
-    {
-        for(col=0;col<size;col++)
-        {
-            if(board[row][col]==0)
-                return 1;
-        }
-    }
-    return 0;
-}
 void generateAOne(int size,int board[][size])
 {
     if(atLeastOneZero(size,board)==0)
