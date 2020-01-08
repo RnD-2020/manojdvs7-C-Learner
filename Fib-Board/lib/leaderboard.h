@@ -51,7 +51,7 @@ void writeIntoLeadeBoard(int n,player players[n])
     int i=0;
     for(i=0;i<n;i++)
     { 
-        printf("\nLopp");
+        printf(
         fwrite (&players[i], sizeof(player), 1, outfile);
     }
     fclose(outfile);
