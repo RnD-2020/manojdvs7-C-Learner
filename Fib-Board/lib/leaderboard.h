@@ -50,13 +50,13 @@ void writeIntoLeadeBoard(int n,player players[n])
     } 
     int i=0;
     for(i=0;i<n;i++)
-    { 
-        printf(
-        fwrite (&players[i], sizeof(player), 1, outfile);
-    }
+         fwrite (&players[i], sizeof(player), 1, outfile);
     fclose(outfile);
     outfile=NULL;
-}
+ }
+
+    
+
 
 void updateLeaderBoard(int no,player players[no])
 {
